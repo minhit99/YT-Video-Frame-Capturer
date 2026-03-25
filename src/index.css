@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-border-primary: var(--border-primary);
+}
+
+:root {
+  /* Default Dark Theme (Original) */
+  --bg-primary: #0f1115;
+  --bg-secondary: #1a1d23;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --accent-primary: #2563eb;
+  --accent-secondary: #60a5fa;
+  --border-primary: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='light'] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent-primary: #2563eb;
+  --accent-secondary: #3b82f6;
+  --border-primary: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='custom'] {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #121212;
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --accent-primary: var(--custom-accent, #8b5cf6); /* Default to violet */
+  --accent-secondary: var(--custom-accent-light, #a78bfa);
+  --border-primary: rgba(255, 255, 255, 0.08);
+}

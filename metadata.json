@@ -1,0 +1,5 @@
+{
+  "name": "YT-Video Frame Capturer",
+  "description": "Upload a video and capture frames in real-time by pressing Enter while it plays.",
+  "requestFramePermissions": []
+}
